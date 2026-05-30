@@ -9,9 +9,8 @@ RUN npm ci --ignore-scripts
 COPY vite.config.js ./
 COPY resources/ resources/
 COPY public/      public/
-COPY tailwind.config.js package.json ./
 
-RUN npm run build && ls -la public/build/
+RUN npm run build
 
 
 # ─── Stage 2: Composer – install PHP dependencies ────────────────────────────
