@@ -38,7 +38,7 @@ RUN mkdir -p bootstrap/cache \
 
 
 # ─── Stage 3: Production image ───────────────────────────────────────────────
-FROM php:8.3-fpm-alpine AS production
+FROM php:8.4-fpm-alpine AS production
 
 LABEL maintainer="Mini Helpdesk AI Assist"
 
