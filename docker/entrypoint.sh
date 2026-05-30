@@ -44,7 +44,7 @@ sleep 1
 
 # ── Run migrations ─────────────────────────────────────────────────────────
 echo "[entrypoint] Running migrations..."
-php artisan migrate --force
+php artisan migrate --force --no-interaction || true
 
 # ── Cache config/routes/views for production ──────────────────────────────
 if [ "${APP_ENV}" = "production" ]; then
