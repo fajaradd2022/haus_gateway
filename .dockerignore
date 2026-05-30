@@ -8,7 +8,6 @@ Dockerfile
 docker-compose.yml
 docker-compose*.yml
 .dockerignore
-docker/
 
 # Node
 node_modules/
