@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path . -Recurse -Directory | Where-Object {$_.Name -in @\\('routes', 'app', 'resources', 'database'\\)} | Select-Object -ExpandProperty FullName)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\WELCOME\\\\Herd\\\\mini_helpdesk_ai_assist\\\\app\\\\Http\\\\Controllers\" -Recurse)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\WELCOME\\\\Herd\\\\mini_helpdesk_ai_assist\" -Depth 1)",
+      "Bash(Select-Object Name)",
+      "Bash(php artisan *)",
+      "Bash(php -l app/Http/Controllers/HelpdeskController.php)",
+      "Bash(php -l app/Models/Contact.php app/Models/Tag.php app/Models/ContactPhone.php app/Models/Ticket.php)",
+      "Bash(npm run *)",
+      "Bash(php -r \"echo password_hash\\('Admin@1234', PASSWORD_BCRYPT, ['cost' => 12]\\);\")",
+      "Bash(php -r 'require '\\\\''vendor/autoload.php'\\\\''; $app = require '\\\\''bootstrap/app.php'\\\\''; $app->make\\('\\\\''Illuminate\\\\Contracts\\\\Console\\\\Kernel'\\\\''\\)->bootstrap\\(\\); foreach\\(glob\\('\\\\''resources/views/helpdesk/partials/**/*.blade.php'\\\\'', GLOB_BRACE\\) as $f\\) { try { \\(new Illuminate\\\\View\\\\Compilers\\\\BladeCompiler\\($app['\\\\''files'\\\\''], sys_get_temp_dir\\(\\)\\)\\)->compileString\\(file_get_contents\\($f\\)\\); echo \"OK  $f\\\\n\"; } catch\\(\\\\Throwable $e\\) { echo \"ERR $f -> \" . $e->getMessage\\(\\) . \"\\\\n\"; } }')",
+      "Bash(sort -k2)"
+    ]
+  }
+}

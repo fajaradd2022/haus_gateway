@@ -1,0 +1,50 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile
+docker-compose.yml
+docker-compose*.yml
+.dockerignore
+docker/
+
+# Node
+node_modules/
+
+# Laravel dev/test
+vendor/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+storage/logs/
+bootstrap/cache/
+
+# Built assets (built during Docker stage)
+public/build/
+public/hot
+public/fonts-manifest.dev.json
+
+# Env files (injected at runtime)
+.env
+.env.*
+!.env.example
+
+# Dev tools
+.editorconfig
+.phpunit.cache/
+phpunit.xml
+.pint.cache/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tests
+tests/
