@@ -22,7 +22,8 @@ COPY composer.json composer.lock ./
 
 # Install prod deps + dump optimised autoloader in one layer
 COPY . .
-RUN composer install \
+RUN mkdir -p bootstrap/cache \
+ && composer install \
     --no-dev \
     --no-interaction \
     --no-scripts \
